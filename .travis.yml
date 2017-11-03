@@ -6,6 +6,6 @@ cache:
 before_install:
   - sh ./get_mpich.sh
 script:
-  - ls -ltr .  
+  - ls -ltr ./mpich  
   - make test
   - ./mpich/bin/mpirun -np 4 ./test
